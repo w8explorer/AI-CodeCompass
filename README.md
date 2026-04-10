@@ -1,13 +1,13 @@
-# 🛡️ Autonomous System Guardian
+# 🛡️ Autonomous System Observer
 > **Powered by AI-CodeCompass Intelligence Suite**
 
-[![Project Identity](https://img.shields.io/badge/Identity-Autonomous_System_Guardian-blueviolet?style=for-the-badge)](https://github.com/w8explorer/AI-CodeCompass)
+[![Project Identity](https://img.shields.io/badge/Identity-Autonomous_System_Observer-blueviolet?style=for-the-badge)](https://github.com/w8explorer/AI-CodeCompass)
 [![Intelligence](https://img.shields.io/badge/Intelligence-Structural_AST-blue?style=for-the-badge)](https://github.com/w8explorer/AI-CodeCompass)
 [![Memory](https://img.shields.io/badge/Memory-Semantic_FAISS-success?style=for-the-badge)](https://github.com/w8explorer/AI-CodeCompass)
 
-## 📋 Overview: What is the Guardian?
+## 📋 Overview: What is the Observer?
 
-The **Autonomous System Guardian** is like a high-tech security specialist for your code. While traditional tools just tell you *that* a file changed, the Guardian understands **what** changed and **why** it matters.
+The **Autonomous System Observer** is like a high-tech security specialist for your code. While traditional tools just tell you *that* a file changed, the Observer understands **what** changed and **why** it matters.
 
 1. **🛡️ The Watchman**: It performs autonomous sweeps every 15 minutes to ensure your system is secure.
 2. **👁️ X-Ray Vision**: It looks *inside* your code to identify specific changes in functions and logic.
@@ -19,17 +19,17 @@ The **Autonomous System Guardian** is like a high-tech security specialist for y
 ## 🚀 Advanced Features
 
 ### 👁️ Structural Intelligence ("Deep Eyes")
-Powered by the `ParserAgent` (Built and Integrated by Antigravity), the Guardian performs deep AST (Abstract Syntax Tree) analysis on every modified file.
+Powered by the `ParserAgent` (Built and Integrated by Antigravity), the Observer performs deep AST (Abstract Syntax Tree) analysis on every modified file.
 - **Logic Awareness**: Detects specific changes in functions, classes, and logic blocks.
 - **Complexity Analysis**: Identifies potential technical debt or security risks introduced by code changes.
 
 ### 🧠 Semantic Memory ("Giant Brain")
-Integrated with a **FAISS Vector Store**, the Guardian never forgets.
+Integrated with a **FAISS Vector Store**, the Observer never forgets.
 - **Persistent Context**: Indexes every security report into a searchable vector database.
 - **RAG-Ready**: Future-proof architecture allowed for Retrieval-Augmented Generation over historical system events.
 
 ### 🛡️ Autonomous Security Auditing
-The Guardian is designed to run silently and autonomously in the background.
+The Observer is designed to run silently and autonomously in the background.
 - **15-Minute Sweeps**: Periodic filesystem scans triggered by the native `scanner.sh` scout.
 - **Human-in-the-Loop**: Optional interactive mode allows developers to provide context "notes" during critical changes.
 
@@ -37,11 +37,11 @@ The Guardian is designed to run silently and autonomously in the background.
 
 ## 🛠️ Architecture
 
-The Guardian is orchestrated using **LangGraph**, ensuring a reliable and deterministic flow between sensing, thinking, and reporting.
+The Observer is orchestrated using **LangGraph**, ensuring a reliable and deterministic flow between sensing, thinking, and reporting.
 
 ```mermaid
 graph TD
-    A[Filesystem Scanner] -->|Change Detected| B(Guardian Agent)
+    A[Filesystem Scanner] -->|Change Detected| B(Observer Agent)
     B --> C{Structural Analysis}
     C -->|Deep Eyes| D[ParserAgent]
     D --> E{AI Summarization}
@@ -60,13 +60,13 @@ graph TD
 - **Environment**: Python 3.12+ (Virtual Environment Recommended)
 
 ### 2. Manual Activation
-Run a high-intelligence scan manually to see the Guardian in action:
+Run a high-intelligence scan manually to see the Observer in action:
 ```bash
-/home/ubuntu/llm_pipeline_env/bin/python3 guardian.py
+/home/ubuntu/llm_pipeline_env/bin/python3 observer.py
 ```
 
 ### 3. Background Automation
-The Guardian is typically scheduled via Crontab:
+The Observer is typically scheduled via Crontab:
 ```bash
 */15 * * * * /bin/bash /home/ubuntu/AI-CodeCompass/scripts/scanner.sh
 ```
@@ -84,7 +84,7 @@ The Guardian is typically scheduled via Crontab:
 ---
 
 ## 🔐 Security & Privacy
-The Guardian is built for **local execution**. All code analysis and memory indexing happen on your server, ensuring that your logic and system state never leave your infrastructure.
+The Observer is built for **local execution**. All code analysis and memory indexing happen on your server, ensuring that your logic and system state never leave your infrastructure.
 
 ---
-*Intelligence Upgraded to Guardian Status by Antigravity (Advanced Agentic Coding).*
+*Intelligence Upgraded to Observer Status by Antigravity (Advanced Agentic Coding).*
